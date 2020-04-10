@@ -32,7 +32,7 @@ if ( ! class_exists( 'WC_Leave_At_Door_Admin_Settings' ) ) {
 					'section_title'	=> array(
 						'name'	=> __( 'Leave At Door', 'leave_at_door_for_woocommerce' ),
 						'type'	=> 'title',
-						'desc'	=> __( 'Enables customers to request their delivery is left at the door.', 'leave_at_door_for_woocommerce' ),
+						'desc'	=> __( 'Select which shipping options should enable customers to request that their order is left at the door.', 'leave_at_door_for_woocommerce' ),
 						'id'	=> 'leave_at_door_section_title'
 					),
 					'section_end'	=> array(
