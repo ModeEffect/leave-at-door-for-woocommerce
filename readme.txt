@@ -36,9 +36,12 @@ This plugin requires your site to have WooCommerce installed in order to work. I
 
 == Changelog ==
 
+= 1.0.1 =
+* Added settings link to plugin page.
+
 = 1.0.0 =
 * Initial release.
 
 == Upgrade Notice ==
-= 1.0.0 =
-* Initial release
+= 1.0.1 =
+* Added settings link to plugin page.

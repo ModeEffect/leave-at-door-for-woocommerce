@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Leave At Door for WooCommerce\n"
-"POT-Creation-Date: 2020-04-10 13:32-0700\n"
-"PO-Revision-Date: 2020-04-10 13:32-0700\n"
+"POT-Creation-Date: 2020-04-10 15:16-0700\n"
+"PO-Revision-Date: 2020-04-10 15:16-0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -47,6 +47,14 @@ msgstr ""
 
 #: includes/save-display-customer-response.php:53
 msgid "Delivery instructions: "
+msgstr ""
+
+#: leave-at-door-for-woocommerce.php:127
+msgid "Go to the settings page"
+msgstr ""
+
+#: leave-at-door-for-woocommerce.php:127
+msgid "Settings"
 msgstr ""
 
 #. Plugin Name of the plugin/theme

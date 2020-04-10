@@ -116,6 +116,18 @@ class WC_Leave_At_Door {
 		include_once( 'includes/class-wc-leave-at-door-admin-settings.php' );
 	}
 
+	/*
+	 * 'Settings' link on plugin page
+	 *
+	 * @param array $links
+	 * @return array
+	 * @since 1.0.0
+	 */
+	public function add_action_link( $links ) {
+		$settings_link = '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=shipping&section=leave_at_door' ). '" title="' . __( 'Go to the settings page', 'leave_at_door_for_woocommerce' ). '">'.__( 'Settings', 'leave_at_door_for_woocommerce' ).'</a>';
+		return array_merge( (array) $settings_link, $links );
+	}
+
 } //end class
 
 endif; // end class_exists check
