@@ -17,7 +17,7 @@ if ( ! class_exists( 'WC_Leave_At_Door_Admin_Settings' ) ) {
 		}
 
 		public function add_advanced_settings_section_tab( $section ) {
-			$section['leave_at_door'] = __( 'Leave At Door', 'woocommerce_leave_at_door' );
+			$section['leave_at_door'] = __( 'Leave At Door', 'leave_at_door_for_woocommerce' );
 
 			return $section;
 		}
@@ -30,9 +30,9 @@ if ( ! class_exists( 'WC_Leave_At_Door_Admin_Settings' ) ) {
 			if ( 'leave_at_door' === $current_section  ) {
 				$settings = array(
 					'section_title'	=> array(
-						'name'	=> __( 'Leave At Door', 'woocommerce_leave_at_door' ),
+						'name'	=> __( 'Leave At Door', 'leave_at_door_for_woocommerce' ),
 						'type'	=> 'title',
-						'desc'	=> __( 'Enables customers to request their delivery is left at the door.', 'woocommerce_leave_at_door' ),
+						'desc'	=> __( 'Enables customers to request their delivery is left at the door.', 'leave_at_door_for_woocommerce' ),
 						'id'	=> 'leave_at_door_section_title'
 					),
 					'section_end'	=> array(

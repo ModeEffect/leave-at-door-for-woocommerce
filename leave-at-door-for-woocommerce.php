@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: WooCommerce Leave At Door
+ * Plugin Name: Leave At Door for WooCommerce
  * Plugin URI: http://amplifyplugins.com
  * Description: Let customers request that a delivery is left at the door.
  * Version: 1.0.0
@@ -11,7 +11,7 @@
  * Tested up to: 5.4.0
  * WC tested up to: 4.0.1
  *
- * Text Domain: woocommerce_leave_at_door
+ * Text Domain: leave_at_door_for_woocommerce
  * Domain Path: /languages/
  *
  * License: GNU General Public License v3.0
@@ -81,9 +81,9 @@ class WC_Leave_At_Door {
 	 */
 	public function load_plugin_textdomain() {
 		// Traditional WordPress plugin locale filter
-		$locale        = apply_filters( 'plugin_locale',  get_locale(), 'woocommerce_leave_at_door' );
+		$locale        = apply_filters( 'plugin_locale',  get_locale(), 'leave_at_door_for_woocommerce' );
 
-		load_plugin_textdomain( 'woocommerce_leave_at_door', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
+		load_plugin_textdomain( 'leave_at_door_for_woocommerce', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
 
 	}
 

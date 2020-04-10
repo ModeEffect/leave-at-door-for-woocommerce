@@ -27,7 +27,7 @@ function wc_leave_at_door_update_order_meta( $order_id ) {
 	 */
 	if ( isset( $_POST[ 'leave_at_door_checkbox' ] ) ) {
 		$customer_input = $_POST[ 'leave_at_door_checkbox' ];
-		add_post_meta( $order_id, 'leave_at_door_checkbox', esc_html__( 'Yes', 'woocommerce_leave_at_door' ) );
+		add_post_meta( $order_id, 'leave_at_door_checkbox', esc_html__( 'Yes', 'leave_at_door_for_woocommerce' ) );
 	}
 
 	/**
@@ -46,11 +46,11 @@ function wc_leave_at_door_display_admin_order( $order ) {
 	$instructions  = get_post_meta( $order->get_id(), 'leave_at_door_instructions', true );
 
 	if ( $leave_at_door ) {
-		echo '<h3>' . esc_html__( 'Leave At Door', 'woocommerce_leave_at_door' ) . '</h3>';
+		echo '<h3>' . esc_html__( 'Leave At Door', 'leave_at_door_for_woocommerce' ) . '</h3>';
 		echo '<ul>
-		<li><strong>' . esc_html__( 'Customer wishes for their order to be left at the door', 'woocommerce_leave_at_door' ) . '</strong></li>';
+		<li><strong>' . esc_html__( 'Customer wishes for their order to be left at the door', 'leave_at_door_for_woocommerce' ) . '</strong></li>';
 		if ( $instructions ){
-			echo '<li><strong>' . esc_html__( 'Delivery instructions: ', 'woocommerce_leave_at_door' ) . '</strong>' . $instructions . '</li>';
+			echo '<li><strong>' . esc_html__( 'Delivery instructions: ', 'leave_at_door_for_woocommerce' ) . '</strong>' . $instructions . '</li>';
 		}
 		echo '</ul>';
 	}
