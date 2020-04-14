@@ -1,9 +1,9 @@
 === Leave At Door For WooCommerce ===
 Contributors: scott.deluzio
 Tags: plugin, woocommerce, checkout, delivery, restaurant
-Requires at least: 3.1.0
+Requires at least: 3.0
 Tested up to: 5.4.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -36,6 +36,10 @@ This plugin requires your site to have WooCommerce installed in order to work. I
 
 == Changelog ==
 
+= 1.0.2 =
+* Fix: Sanitized values from form inputs.
+* Update: Removed unnecessary commented out code.
+
 = 1.0.1 =
 * Added settings link to plugin page.
 
@@ -43,5 +47,6 @@ This plugin requires your site to have WooCommerce installed in order to work. I
 * Initial release.
 
 == Upgrade Notice ==
-= 1.0.1 =
-* Added settings link to plugin page.
+= 1.0.2 =
+* Fix: Sanitized values from form inputs.
+* Update: Removed unnecessary commented out code.
