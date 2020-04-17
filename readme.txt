@@ -34,11 +34,17 @@ This plugin requires your site to have WooCommerce installed in order to work. I
 3. In your WordPress dashboard, click on WooCommerce > Settings > Shipping tab > Leave At Door.
 4. Select the shipping method(s) that would prompt the leave at door option to be displayed.
 
+== Screenshots ==
+1. Leave at door option at checkout. When the checkbox is checked, it reveals an optional "Instructions for delivery driver" text box.
+2. On the customer's order details, the leave at door option will be displayed, indicating that the customer wishes for the order to be left at the door and delivery instructions, if any.
+3. The leave at door instructions are also displayed on the edit order screen in the admin.
+
 == Changelog ==
 
 = 1.0.3 =
 * Fixed plugin textdomain for translations.
 * Updated POT file for translations.
+* Minor formatting updates.
 
 = 1.0.2 =
 * Fix: Sanitized values from form inputs.
