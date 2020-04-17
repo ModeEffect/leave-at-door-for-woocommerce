@@ -16,10 +16,10 @@ function wlad_checkout_options() {
 	$chosen_methods  = WC()->session->get( 'chosen_shipping_methods' );
 	$chosen_shipping = $chosen_methods[0];
 
-	$leave_at_door      = __( 'Leave At Door', 'leave_at_door_for_woocommerce' );
+	$leave_at_door      = __( 'Leave At Door', 'leave-at-door-for-woocommerce' );
 	$leave_at_door_text = (string) apply_filters( 'leave_at_door_text', $leave_at_door );
 
-	$instructions      = __( 'Instructions for delivery driver', 'leave_at_door_for_woocommerce' );
+	$instructions      = __( 'Instructions for delivery driver', 'leave-at-door-for-woocommerce' );
 	$instructions_text = (string) apply_filters( 'leave_at_door_delivery_instructions', $instructions );
 
 	// Loop through shipping packages from WC_Session (They can be multiple in some cases).

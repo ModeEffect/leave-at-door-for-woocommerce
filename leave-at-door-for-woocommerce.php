@@ -11,7 +11,7 @@
  * Tested up to: 5.4.0
  * WC tested up to: 4.0.1
  *
- * Text Domain: leave_at_door_for_woocommerce
+ * Text Domain: leave-at-door-for-woocommerce
  * Domain Path: /languages/
  *
  * License: GNU General Public License v3.0
@@ -30,7 +30,7 @@ if ( ! class_exists( 'WC_Leave_At_Door' ) ) :
 		 * WC_Leave_At_Door Instance.
 		 *
 		 * @var WC_Leave_At_Door - the single instance of the class
-		 * @since 2.0
+		 * @since 1.0.0
 		 */
 		protected static $_instance = null;
 
@@ -42,7 +42,7 @@ if ( ! class_exists( 'WC_Leave_At_Door' ) ) :
 		 * @static
 		 * @see WC_Leave_At_Door()
 		 * @return WC_Leave_At_Door - Main instance
-		 * @since 2.0
+		 * @since 1.0.0
 		 */
 		public static function instance() {
 			if ( is_null( self::$_instance ) ) {
@@ -82,9 +82,9 @@ if ( ! class_exists( 'WC_Leave_At_Door' ) ) :
 		 */
 		public function load_plugin_textdomain() {
 			// Traditional WordPress plugin locale filter
-			$locale = apply_filters( 'plugin_locale', get_locale(), 'leave_at_door_for_woocommerce' );
+			$locale = apply_filters( 'plugin_locale', get_locale(), 'leave-at-door-for-woocommerce' );
 
-			load_plugin_textdomain( 'leave_at_door_for_woocommerce', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
+			load_plugin_textdomain( 'leave-at-door-for-woocommerce', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
 
 		}
 
@@ -118,7 +118,7 @@ if ( ! class_exists( 'WC_Leave_At_Door' ) ) :
 			include_once  'includes/class-wc-leave-at-door-admin-settings.php' ;
 		}
 
-		/*
+		/**
 		 * 'Settings' link on plugin page
 		 *
 		 * @param array $links
@@ -126,7 +126,7 @@ if ( ! class_exists( 'WC_Leave_At_Door' ) ) :
 		 * @since 1.0.0
 		 */
 		public function add_action_link( $links ) {
-			$settings_link = '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=shipping&section=leave_at_door' ) . '" title="' . __( 'Go to the settings page', 'leave_at_door_for_woocommerce' ) . '">' . __( 'Settings', 'leave_at_door_for_woocommerce' ) . '</a>';
+			$settings_link = '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=shipping&section=leave_at_door' ) . '" title="' . __( 'Go to the settings page', 'leave-at-door-for-woocommerce' ) . '">' . __( 'Settings', 'leave-at-door-for-woocommerce' ) . '</a>';
 			return array_merge( (array) $settings_link, $links );
 		}
 
