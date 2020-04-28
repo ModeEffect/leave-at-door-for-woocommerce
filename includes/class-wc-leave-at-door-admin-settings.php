@@ -45,7 +45,7 @@ if ( ! class_exists( 'WC_Leave_At_Door_Admin_Settings' ) ) {
 				 * Add in shipping methods at the top of the settings but below the main title.
 				 */
 				$zone = new WC_Shipping_Zones();
-
+				$shipping_methods = array();
 				foreach ( $zone->get_zones() as $key => $shipping_zone ) {
 					foreach ( $shipping_zone['shipping_methods'] as $id => $method ) {
 						$shipping_methods[ $method->id . ':' . $id] = array(
@@ -55,6 +55,15 @@ if ( ! class_exists( 'WC_Leave_At_Door_Admin_Settings' ) ) {
 							'id'   => 'wc_leave_at_door_' . $method->id . ':' . $id,
 						);
 					}
+				}
+				if ( empty( $shipping_methods ) ) {
+					$shipping_methods['no_shipping_methods'] = array(
+						'name' => __( 'Leave At Door', 'leave-at-door-for-woocommerce' ),
+						'type' => 'title',
+						'desc' => __( 'You do not have any shipping methods available. Please set up your shipping methods by clicking the Shipping Zones link above before returning to this page.', 'leave-at-door-for-woocommerce' ),
+						'id'   => 'wc_leave_at_door_no_shipping_methods',
+					);
+					unset( $settings['section_title'] );
 				}
 				// Adds shipping methods to the settings above.
 				array_splice( $settings, 1, 0, $shipping_methods );

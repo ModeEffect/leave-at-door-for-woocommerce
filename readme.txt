@@ -2,8 +2,8 @@
 Contributors: scott.deluzio
 Tags: plugin, woocommerce, checkout, delivery, restaurant
 Requires at least: 3.0
-Tested up to: 5.4.1
-Stable tag: 1.0.4
+Tested up to: 5.4
+Stable tag: 1.0.5
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -41,6 +41,9 @@ This plugin requires your site to have WooCommerce installed in order to work. I
 
 == Changelog ==
 
+= 1.0.5 =
+* Added error handling for when no shipping methods are set.
+
 = 1.0.4 =
 * Added new filter `wc_leave_at_door_custom_display` for custom conditions to control whether or not the leave at door option is displayed on the checkout page.
 
@@ -60,5 +63,5 @@ This plugin requires your site to have WooCommerce installed in order to work. I
 * Initial release.
 
 == Upgrade Notice ==
-= 1.0.4 =
-* Added new filter `wc_leave_at_door_custom_display` for custom conditions to control whether or not the leave at door option is displayed on the checkout page.
+= 1.0.5 =
+* Added error handling for when no shipping methods are set.
