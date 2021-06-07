@@ -1,3 +1,7 @@
 .leave_at_door_instructions {
   display: none;
 }
+
+.leave_at_door_instructions_display {
+  display: block;
+}
