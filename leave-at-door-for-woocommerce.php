@@ -3,13 +3,13 @@
  * Plugin Name: Leave At Door for WooCommerce
  * Plugin URI: http://amplifyplugins.com
  * Description: Let customers request that a delivery is left at the door.
- * Version: 1.0.6
- * Author: Scott DeLuzio
- * Author URI: http://scottdeluzio.com
+ * Version: 1.0.7
+ * Author: AMP-MODE
+ * Author URI: http://amplifyplugins.com
  * Requires at least: 4.4.0
  * WC requires at least: 3.0.0
- * Tested up to: 5.5.0
- * WC tested up to: 4.4.0
+ * Tested up to: 5.8.1
+ * WC tested up to: 5.7.1
  *
  * Text Domain: leave-at-door-for-woocommerce
  * Domain Path: /languages/
@@ -70,7 +70,7 @@ if ( ! class_exists( 'WC_Leave_At_Door' ) ) :
 			add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'add_action_link' ), 10, 2 );
 
 			define( 'WLAD_PLUGIN_URL', plugins_url( '', __FILE__ ) );
-			define( 'WLAD_PLUGIN_VERSION', '1.0.6' );
+			define( 'WLAD_PLUGIN_VERSION', '1.0.7' );
 
 		}
 
