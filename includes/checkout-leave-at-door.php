@@ -33,18 +33,27 @@ function wlad_checkout_options() {
 
 				if ( $chosen_shipping == $rate_id && $custom_display ) {
 					if ( 'yes' == get_option( 'wc_leave_at_door_' . $rate_id ) ) {
-							// Add a checkbox field
-							woocommerce_form_field( 'leave_at_door_checkbox', array(
-								'type'        => 'checkbox',
-								'class'       => array( 'form-row-wide' ),
-								'label'       => $leave_at_door_text,
-								'custom_attributes' => array( 'onclick' => 'revealDeliveryInstructions()' ),
-							), '' );
-							woocommerce_form_field( 'leave_at_door_instructions', array(
-								'type'        => 'text',
-								'class'       => array( 'form-row-wide', 'leave_at_door_instructions' ),
-								'label'       => $instructions_text,
-							), '' );
+						// Add a checkbox field.
+						woocommerce_form_field( 'leave_at_door_checkbox', array(
+							'type'				=> 'checkbox',
+							'default'			=> ( 'yes' == get_option( 'wc_leave_at_door_default_checked' ) ) ? 1 : 0,
+							'class'				=> array( 'form-row-wide' ),
+							'label'				=> $leave_at_door_text,
+							'custom_attributes'	=> array( 'onclick' => 'revealDeliveryInstructions()' ),
+						) );
+						// Add a text field.
+						if ( 'yes' == get_option( 'wc_leave_at_door_default_checked' ) ) {
+							// Displays the text field on page load without having to interact with the checkbox, which is already checked.
+							$class = array( 'form-row-wide', 'leave_at_door_instructions_display' );
+						} else {
+							// Hides the text field on page load since the checkbox is not yet checked.
+							$class = array( 'form-row-wide', 'leave_at_door_instructions' );
+						}
+						woocommerce_form_field( 'leave_at_door_instructions', array(
+							'type'				=> 'text',
+							'class'				=> $class,
+							'label'				=> $instructions_text,
+						), '' );
 						return;
 					}
 				}

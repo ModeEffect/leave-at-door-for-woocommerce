@@ -35,6 +35,12 @@ if ( ! class_exists( 'WC_Leave_At_Door_Admin_Settings' ) ) {
 						'desc'	=> __( 'Select which shipping options should enable customers to request that their order is left at the door.', 'leave-at-door-for-woocommerce' ),
 						'id'	=> 'leave_at_door_section_title'
 					),
+					'check_default'	=> array(
+						'name'	=> __( 'Checked by Default', 'leave-at-door-for-woocommerce' ),
+						'type'	=> 'checkbox',
+						'desc'	=> __( 'Check this box if you wish to have the "leave at door" box checked automatically on the checkout page', 'leave-at-door-for-woocommerce' ),
+						'id'	=> 'wc_leave_at_door_default_checked',
+					),
 					'section_end'	=> array(
 						'type'		=> 'sectionend',
 						'id'		=> 'leave_at_door_section_end'
@@ -64,6 +70,7 @@ if ( ! class_exists( 'WC_Leave_At_Door_Admin_Settings' ) ) {
 						'id'   => 'wc_leave_at_door_no_shipping_methods',
 					);
 					unset( $settings['section_title'] );
+					unset( $settings['check_default'] );
 				}
 				// Adds shipping methods to the settings above.
 				array_splice( $settings, 1, 0, $shipping_methods );

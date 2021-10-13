@@ -3,7 +3,7 @@ Contributors: scott.deluzio, ampmode
 Tags: plugin, woocommerce, checkout, delivery, restaurant
 Requires at least: 3.0
 Tested up to: 5.8.1
-Stable tag: 1.0.7
+Stable tag: 1.1.1
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -41,9 +41,12 @@ This plugin requires your site to have WooCommerce installed in order to work. I
 
 == Changelog ==
 
-= 1.0.7 =
+= 1.1.1 =
 * Updated tested up to versions.
 * Added Contributors.
+
+= 1.1.0 =
+* Added option to enable the "leave at door" checkbox to be checked by default on the checkout page.
 
 = 1.0.6 =
 * Updated tested up to versions.
@@ -70,6 +73,6 @@ This plugin requires your site to have WooCommerce installed in order to work. I
 * Initial release.
 
 == Upgrade Notice ==
-= 1.0.7 =
+= 1.1.1 =
 * Updated tested up to versions.
 * Added Contributors.
